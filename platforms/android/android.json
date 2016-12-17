@@ -1,0 +1,47 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"CBLite\"><param name=\"android-package\" value=\"com.couchbase.cblite.phonegap.CBLite\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.couchbase.lite.phonegap": {
+            "PACKAGE_NAME": "com.ntpc.ToDoLite"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ntpc.ToDoLite"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.couchbase.lite.phonegap.CouchbaseLite",
+            "file": "plugins/com.couchbase.lite.phonegap/www/cblite.js",
+            "pluginId": "com.couchbase.lite.phonegap",
+            "clobbers": [
+                "window.cblite"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.couchbase.lite.phonegap": "1.3.1",
+        "cordova-plugin-whitelist": "1.3.1"
+    }
+}

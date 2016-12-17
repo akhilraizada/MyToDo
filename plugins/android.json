@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.couchbase.lite.phonegap": {
+            "PACKAGE_NAME": "com.ntpc.ToDoLite"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ntpc.ToDoLite"
+        }
+    },
+    "dependent_plugins": {}
+}
